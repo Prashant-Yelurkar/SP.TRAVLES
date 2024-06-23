@@ -40,14 +40,16 @@ export default function Home() {
     if (closeKm - openKm > 80) {
       setExtraKm(closeKm - openKm - 80);
     }
-    const timeAmount = overTime * hrsFair;
-    const kmAmonut = extraKm * kmFair;
+    // const timeAmount = overTime * hrsFair;
+    // const kmAmonut = extraKm * kmFair;
+  }
 
+  useEffect(() => {
     setAmount(+localFair + +(overTime * hrsFair) + +(extraKm * kmFair));
     setTotalAmonut(
       +localFair + +(overTime * hrsFair) + +(extraKm * kmFair) + +parking
     );
-  }
+  }, [overTime, extraKm]);
   useEffect(() => {
     handelLocal();
   }, [save]);
