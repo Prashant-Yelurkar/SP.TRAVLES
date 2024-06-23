@@ -31,9 +31,9 @@ export default function Home() {
   const [totalAmount, setTotalAmonut] = useState(0);
   function handelLocal() {
     // time
-    const start = new Date(openTime);
-    const end = new Date(closeTime);
-    const diff = (end - start) / (1000 * 60 * 60);
+    const start: any = new Date(openTime);
+    const end: any = new Date(closeTime);
+    const diff: any = (end - start) / (1000 * 60 * 60);
     if (diff.toFixed(2) - 8 > 0.5) {
       setOverTime(diff.toFixed(2) - 8);
     } // km
@@ -411,7 +411,7 @@ function numberToWords(num: number) {
   ];
   const thousands = ["", "thousand", "million", "billion"];
 
-  const convertToWords = (num: number) => {
+  function convertToWords(num: number): any {
     if (num < 20) return belowTwenty[num];
     else if (num < 100)
       return (
@@ -425,7 +425,7 @@ function numberToWords(num: number) {
         (num % 100 !== 0 ? " " + convertToWords(num % 100) : "")
       );
     return "";
-  };
+  }
 
   let word = "";
   let i = 0;
