@@ -1,0 +1,21 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding: 0px 10px;
+}
+.inputField input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding-inline: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-top: 3px;
+}
