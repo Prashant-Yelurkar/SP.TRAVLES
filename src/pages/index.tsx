@@ -320,11 +320,9 @@ export default function Home() {
                   <td></td>
                 </tr>
                 <tr>
-                  <td rowSpan={2} colSpan={2}>
-                    <div>
-                      Rupees :-
-                      {numberToWords(totalAmount)}
-                    </div>
+                  <td rowSpan={2} colSpan={2} className={styles.word}>
+                    Rupees :-
+                    <p>{numberToWords(totalAmount)}</p>
                   </td>
 
                   <td> Amount Rs</td>
