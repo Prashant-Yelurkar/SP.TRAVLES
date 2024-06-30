@@ -49,7 +49,8 @@ export default function Home() {
     setTotalAmonut(
       +localFair + +(overTime * hrsFair) + +(extraKm * kmFair) + +parking
     );
-  }, [overTime, extraKm]);
+  }, [handelLocal]);
+
   useEffect(() => {
     handelLocal();
   }, [save]);
